@@ -24,39 +24,39 @@ echo "Homebrew found in ${HBREW_BIN}"
 
 set -x
 
-# brew tap homebrew/cask-versions
+brew tap homebrew/cask-versions
 
-# # install priority 1
-# brew install python3
-# brew install --cask rectangle
-# brew install --cask atom
-# brew install --cask visual-studio-code
-# brew install --cask firefox
+# install priority 1
+brew install python3
+brew install --cask rectangle
+brew install --cask atom
+brew install --cask visual-studio-code
+brew install --cask firefox
 
-# # install priority 2
-# brew install --cask appcleaner
-# brew install --cask keka
-# brew install --cask vlc
-# brew install --cask movist
-# brew install --cask transmission
-# brew install --cask thunderbird
-# brew install --cask handbrake
-# brew install --cask audacity
-# brew install --cask spotify
-# brew install --cask gimp
-# brew install --cask libreoffice
+# install priority 2
+brew install --cask appcleaner
+brew install --cask keka
+brew install --cask vlc
+brew install --cask movist
+brew install --cask transmission
+brew install --cask thunderbird
+brew install --cask handbrake
+brew install --cask audacity
+brew install --cask spotify
+brew install --cask gimp
+brew install --cask libreoffice
 
-# # install priority 3
-# brew install --cask beyond-compare
-# brew install --cask google-chrome
-# brew install --cask github
-# brew install --cask visual-studio
-# brew install --cask unity-hub
-# brew install --cask android-studio
+# install priority 3
+brew install --cask beyond-compare
+brew install --cask google-chrome
+brew install --cask github
+brew install --cask visual-studio
+brew install --cask unity-hub
+brew install --cask android-studio
 
-# # install priority 4
-# brew install --cask obs
-# brew install --cask blender
+# install priority 4
+brew install --cask obs
+brew install --cask blender
 
 set +x
 
