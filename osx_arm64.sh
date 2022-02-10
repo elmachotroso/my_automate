@@ -47,12 +47,20 @@ brew install --cask gimp
 brew install --cask libreoffice
 
 # install priority 3
+brew install gcc
+brew install --cask cocoapods
 brew install --cask beyond-compare
 brew install --cask google-chrome
+brew install --cask slack
+brew install --cask microsoft-teams
 brew install --cask github
 brew install --cask visual-studio
 brew install --cask unity-hub
 brew install --cask android-studio
+#brew install --cask virtualbox #not ARM ready
+brew install --cask utm
+brew install --cask docker
+brew install --cask postman
 
 # install priority 4
 brew install --cask obs
