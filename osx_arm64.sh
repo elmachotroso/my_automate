@@ -55,8 +55,9 @@ brew install --cask slack
 brew install --cask microsoft-teams
 brew install --cask github
 brew install --cask visual-studio
-brew install --cask unity-hub
 brew install --cask android-studio
+brew install --cask unity-hub
+brew install --cask epic-games
 #brew install --cask virtualbox #not ARM ready
 brew install --cask utm
 brew install --cask docker
