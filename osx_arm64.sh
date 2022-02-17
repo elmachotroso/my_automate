@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # auto installation of softwares for mac m1*
+# usage: sudo ./osx_arm64.sh
 
 set -e
 
@@ -27,6 +28,13 @@ set -x
 brew tap homebrew/cask-versions
 
 # install priority 1
+brew install git
+
+## git-lfs - begin
+brew install git-lfs
+git lfs install
+## git-lfs - end
+
 brew install python3
 brew install --cask rectangle
 brew install --cask atom
@@ -38,6 +46,7 @@ brew install --cask appcleaner
 brew install --cask keka
 brew install --cask vlc
 brew install --cask movist
+brew install --cask zoom
 brew install --cask transmission
 brew install --cask thunderbird
 brew install --cask handbrake
@@ -47,13 +56,42 @@ brew install --cask gimp
 brew install --cask libreoffice
 
 # install priority 3
+
+## ccache - begin
+brew install ccache
+# prepend /opt/homebrew/opt/ccache/libexec
+TEST_CCACHE="$(echo ${PATH} | grep 'ccache/libexec' )"
+if [ -z "${TEST_CCACHE}" ]; then
+    echo 'export PATH="/opt/homebrew/opt/ccache/libexec:${PATH}"' >> ~/.zprofile
+    echo 'export PATH="/opt/homebrew/opt/ccache/libexec:${PATH}"' >> ~/.bash_profile
+    echo 'export PATH="/opt/homebrew/opt/ccache/libexec:${PATH}"' >> ~/.profile
+fi
+## ccache - end
+
 brew install gcc
+
+## java - begin
+brew install java11
+ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.zprofile
+echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"' >> ~/.zprofile
+
+echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.bash_profile
+echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"' >> ~/.bash_profile
+
+echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.profile
+echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"' >> ~/.profile
+## java - end
+
+brew install imagemagick
+brew install --cask dotnet-sdk
+brew install --cask github
+brew install --cask sourcetree
 brew install --cask cocoapods
 brew install --cask beyond-compare
 brew install --cask google-chrome
 brew install --cask slack
 brew install --cask microsoft-teams
-brew install --cask github
 brew install --cask visual-studio
 brew install --cask android-studio
 brew install --cask unity-hub
@@ -75,6 +113,7 @@ echo "You may want to open up App Store and get the following:"
 echo "- Amphetamine"
 echo "- Xcode"
 echo "- DaVinci Resolve"
+echo "- Steam"
 echo
 
 # install python3 libraries
