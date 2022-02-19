@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # auto installation of softwares for mac m1*
-# usage: sudo ./osx_arm64.sh
+# usage: sudo ./macos_arm64.sh
 
 set -e
 
@@ -28,6 +28,7 @@ set -x
 brew tap homebrew/cask-versions
 
 # install priority 1
+brew install wget
 brew install git
 
 ## git-lfs - begin
@@ -35,13 +36,29 @@ brew install git-lfs
 git lfs install
 ## git-lfs - end
 
+## python 3 - begin
 brew install python3
+# install python3 libraries
+PY3_BIN=$(lib_bash/get_python3.sh)
+if [ -z "${PY3_BIN}" ]; then
+    echo "Failed to retrieve Python 3"
+    exit 1
+fi
+echo "Python 3 found in ${PY3_BIN}"
+echo "Installing Python 3 modules..."
+"${PY3_BIN}" -m pip install --upgrade pip
+"${PY3_BIN}" -m pip install -r requirements.txt
+## python 3 - end
+
+brew install mas
 brew install --cask rectangle
 brew install --cask atom
+mas install 497799835 # Xcode
 brew install --cask visual-studio-code
 brew install --cask firefox
 
 # install priority 2
+mas install 937984704 # Amphetamine
 brew install --cask appcleaner
 brew install --cask keka
 brew install --cask vlc
@@ -104,28 +121,10 @@ brew install --cask postman
 # install priority 4
 brew install --cask obs
 brew install --cask blender
+mas install 571213070 # DaVinci Resolve
+./lib_bash/install_dmg.sh "https://cdn.cloudflare.steamstatic.com/client/installer/steam.dmg" "Steam"
 
 set +x
-
-# App store only
-echo
-echo "You may want to open up App Store and get the following:"
-echo "- Amphetamine"
-echo "- Xcode"
-echo "- DaVinci Resolve"
-echo "- Steam"
-echo
-
-# install python3 libraries
-PY3_BIN=$(lib_bash/get_python3.sh)
-if [ -z "${PY3_BIN}" ]; then
-    echo "Failed to retrieve Python 3"
-    exit 1
-fi
-echo "Python 3 found in ${PY3_BIN}"
-echo "Installing Python 3 modules..."
-"${PY3_BIN}" -m pip install --upgrade pip
-"${PY3_BIN}" -m pip install -r requirements.txt
 
 echo
 echo "All steps executed."
