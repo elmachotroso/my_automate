@@ -119,6 +119,7 @@ brew install --cask docker
 brew install --cask postman
 
 # install priority 4
+brew install --cask veracrypt
 brew install --cask obs
 brew install --cask blender
 mas install 571213070 # DaVinci Resolve
