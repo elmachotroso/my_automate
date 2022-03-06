@@ -61,6 +61,7 @@ brew install --cask firefox
 mas install 937984704 # Amphetamine
 brew install --cask appcleaner
 brew install --cask keka
+brew install --cask google-drive
 brew install --cask vlc
 brew install --cask movist
 brew install --cask zoom
