@@ -102,6 +102,7 @@ echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"' >> ~/.profile
 ## java - end
 
 brew install imagemagick
+brew install --cask powershell
 brew install --cask dotnet-sdk
 brew install --cask github
 brew install --cask sourcetree
