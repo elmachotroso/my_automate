@@ -101,6 +101,7 @@ echo 'export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"' >> ~/.profile
 echo 'export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"' >> ~/.profile
 ## java - end
 
+brew install node
 brew install imagemagick
 brew install --cask powershell
 brew install --cask dotnet-sdk
@@ -119,6 +120,10 @@ brew install --cask epic-games
 brew install --cask utm
 brew install --cask docker
 brew install --cask postman
+# crypto stuff
+brew install ethereum
+brew install --cask ganache
+brew install --cask brave-browser
 
 # install priority 4
 brew install --cask veracrypt
@@ -128,6 +133,8 @@ mas install 571213070 # DaVinci Resolve
 ./lib_bash/install_dmg.sh "https://cdn.cloudflare.steamstatic.com/client/installer/steam.dmg" "Steam"
 
 set +x
+
+./npm_installs.sh
 
 echo
 echo "All steps executed."
