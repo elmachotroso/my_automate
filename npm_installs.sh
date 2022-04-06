@@ -13,7 +13,6 @@ fi
 echo "Performing npm installs..."
 
 npm install -g truffle
-
 npm audit fix --force
 
 set +e

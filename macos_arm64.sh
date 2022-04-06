@@ -50,6 +50,7 @@ echo "Installing Python 3 modules..."
 "${PY3_BIN}" -m pip install -r requirements.txt
 ## python 3 - end
 
+brew install rsync
 brew install mas
 brew install --cask rectangle
 brew install --cask atom
