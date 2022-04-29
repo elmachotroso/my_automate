@@ -88,6 +88,7 @@ fi
 ## ccache - end
 
 brew install gcc
+brew install cmake
 
 ## java - begin
 brew install java11
