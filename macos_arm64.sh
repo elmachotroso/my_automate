@@ -60,6 +60,7 @@ brew install --cask firefox
 
 # install priority 2
 mas install 937984704 # Amphetamine
+brew install --cask tg-pro
 brew install --cask appcleaner
 brew install --cask keka
 brew install --cask google-drive
@@ -123,9 +124,9 @@ brew install --cask utm
 brew install --cask docker
 brew install --cask postman
 # crypto stuff
-brew install ethereum
-brew install --cask ganache
-brew install --cask brave-browser
+#brew install ethereum
+#brew install --cask ganache
+#brew install --cask brave-browser
 
 # install priority 4
 brew install --cask veracrypt
