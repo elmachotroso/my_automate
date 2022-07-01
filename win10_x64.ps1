@@ -12,6 +12,7 @@ choco install audacity -y
 choco install dotnet -y
 choco install filezilla -y
 choco install firefox -y
+choco install barrier -y
 choco install git -y
 choco install git-lfs -y
 choco install java -y
