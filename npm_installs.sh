@@ -12,8 +12,9 @@ fi
 
 echo "Performing npm installs..."
 
-npm install -g truffle
-npm audit fix --force
+# crypto stuff
+#npm install -g truffle
+#npm audit fix --force
 
 set +e
 

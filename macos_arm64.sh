@@ -52,6 +52,7 @@ echo "Installing Python 3 modules..."
 
 brew install rsync
 brew install mas
+mas install 1509590766 # MuteKey (Dave Cheng)
 brew install --cask rectangle
 brew install --cask atom
 mas install 497799835 # Xcode
