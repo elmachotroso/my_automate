@@ -55,7 +55,8 @@ brew install mas
 mas install 1509590766 # MuteKey (Dave Cheng)
 brew install --cask rectangle
 brew install --cask atom
-brew install --cask homebrew/cask-drivers/corsair-icue
+brew install --cask via
+//brew install --cask homebrew/cask-drivers/corsair-icue
 brew install --cask logitech-options
 mas install 497799835 # Xcode
 brew install --cask visual-studio-code
