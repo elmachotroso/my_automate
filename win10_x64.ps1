@@ -26,4 +26,5 @@ choco install vcredist -y
 choco install veeam-agent -y
 choco install vscode -y
 choco install winlibs -y
+choco install epicgameslauncher -y
 choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
