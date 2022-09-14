@@ -28,3 +28,4 @@ choco install vscode -y
 choco install winlibs -y
 choco install epicgameslauncher -y
 choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
+choco install unity-hub -y --ignore-checksums
