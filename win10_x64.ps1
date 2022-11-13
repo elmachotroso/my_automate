@@ -1,7 +1,14 @@
 # Windows 10 powershell script to automate install of applications for new Win10 machines
 
 # install chocolatey
-Write-Output "Checking existence of Chocolatey..."
+Write-Host "Checking existence of Chocolatey..."
+if( $null -eq (Get-Command "choco.exe" -ErrorAction SilentlyContinue) )
+{
+    Write-Host "Could not find chocolatey (choco.exe) installation."
+    Exit 1
+}
+$choco_location=(where choco)
+Write-Host "Chocolatey found in $choco_location"
 
 # Install packages via chocolatey
 choco install powertoys -y
