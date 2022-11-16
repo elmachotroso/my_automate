@@ -19,12 +19,13 @@ choco install audacity -y
 choco install dotnet -y
 choco install filezilla -y
 choco install firefox -y
+choco install thunderbird -y
 choco install barrier -y
 choco install git -y
 choco install git-lfs -y
-choco install java -y
-choco install jr8 -y
-choco install k-lite -y
+choco install javaruntime -y
+choco install jdk11 -y
+choco install k-litecodecpackfull -y
 choco install vlc -y
 choco install libreoffice -y
 choco install notepadplusplus -y
