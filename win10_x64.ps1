@@ -7,7 +7,7 @@ if( $null -eq (Get-Command "choco.exe" -ErrorAction SilentlyContinue) )
     Write-Host "Could not find chocolatey (choco.exe) installation."
     Exit 1
 }
-$choco_location=(where choco)
+$choco_location=(Where-Object choco)
 Write-Host "Chocolatey found in $choco_location"
 
 # Install packages via chocolatey
@@ -28,12 +28,12 @@ choco install firefox -y
 choco install thunderbird -y
 choco install barrier -y
 choco install javaruntime -y
-choco install jdk11 -y
-choco install postman -y
+choco install jdk8 -y
 choco install putty -y
 choco install vcredist-all -y
-choco install veeam-agent -y
 choco install winlibs -y
 choco install epicgameslauncher -y
 choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
 choco install unity-hub -y --ignore-checksums
+choco install teamviewer -y
+choco install spotify -y
