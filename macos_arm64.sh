@@ -52,7 +52,6 @@ echo "Installing Python 3 modules..."
 
 brew install rsync
 brew install mas
-mas install 1509590766 # MuteKey (Dave Cheng)
 brew install --cask rectangle
 brew install --cask atom
 brew install --cask via
@@ -64,6 +63,7 @@ brew install --cask firefox
 
 # install priority 2
 mas install 937984704 # Amphetamine
+mas install 1552826194 # iWallpaper Engine
 brew install --cask tg-pro
 brew install --cask appcleaner
 brew install --cask keka
