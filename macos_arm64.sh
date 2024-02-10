@@ -55,7 +55,6 @@ brew install mas
 brew install --cask rectangle
 brew install --cask atom
 brew install --cask via
-//brew install --cask homebrew/cask-drivers/corsair-icue
 brew install --cask logitech-options
 mas install 497799835 # Xcode
 brew install --cask visual-studio-code
@@ -67,7 +66,7 @@ mas install 1552826194 # iWallpaper Engine
 brew install --cask tg-pro
 brew install --cask appcleaner
 brew install --cask keka
-brew install --cask barrier
+# brew install --cask barrier
 brew install --cask google-drive
 brew install --cask vlc
 brew install --cask movist
@@ -78,6 +77,7 @@ brew install --cask handbrake
 brew install --cask audacity
 brew install --cask spotify
 brew install --cask gimp
+#brew install --cask krita
 brew install --cask libreoffice
 
 # install priority 3
@@ -114,7 +114,7 @@ brew install imagemagick
 brew install --cask powershell
 brew install --cask dotnet-sdk
 brew install --cask github
-brew install --cask sourcetree
+# brew install --cask sourcetree
 brew install --cask cocoapods
 brew install --cask beyond-compare
 brew install --cask google-chrome
@@ -125,19 +125,19 @@ brew install --cask android-studio
 brew install --cask unity-hub
 brew install --cask epic-games
 #brew install --cask virtualbox #not ARM ready
-brew install --cask utm
+#brew install --cask utm
 brew install --cask docker
-brew install --cask postman
+#brew install --cask postman
 # crypto stuff
 #brew install ethereum
 #brew install --cask ganache
 #brew install --cask brave-browser
 
 # install priority 4
-brew install --cask veracrypt
-brew install --cask obs
+# brew install --cask veracrypt
+# brew install --cask obs
 brew install --cask blender
-mas install 571213070 # DaVinci Resolve
+# mas install 571213070 # DaVinci Resolve
 ./lib_bash/install_dmg.sh "https://cdn.cloudflare.steamstatic.com/client/installer/steam.dmg" "Steam"
 
 set +x
