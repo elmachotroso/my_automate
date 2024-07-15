@@ -19,7 +19,9 @@ choco install vlc -y
 choco install k-litecodecpackfull -y
 choco install libreoffice -y
 choco install vscode -y
-choco install beyondcompare -y
+choco install beyondcompare --version 4.4.7.20240301 -y
+choco install googledrive -y
+choco install gdrive -y
 #choco install android-studio -y
 #choco install audacity -y
 choco install dotnet -y
